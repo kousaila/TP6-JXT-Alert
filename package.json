@@ -1,0 +1,32 @@
+{
+  "name": "esir-jxt-tp6",
+  "version": "1.0.0",
+  "description": "TP6 sur les alertes",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "mocha --timeout 10000 --exit",
+    "test-watch": "mocha --watch",
+    "test-coverage": "nyc --reporter=lcov  npm test",
+    "test-report": "npm run test-coverage && nyc report"
+  },
+  "author": "kousaila and vincent",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.1",
+    "mocha": "^7.1.1",
+    "nodemon": "^2.0.3"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.19.0",
+    "config": "^3.1.0",
+    "express": "^4.17.0",
+    "helmet": "^3.18.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.2.5",
+    "mongoose": "^5.5.9",
+    "uuid": "^3.3.2"
+  }
+}
